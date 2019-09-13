@@ -11,7 +11,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn lint && rm -rf dist && tsc --declaration",
+    "build": "yarn lint && rm -rf dist && tsc --project tsconfig.dist.json --declaration",
     "test": "jest",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write '**/*.{ts,js,json,md}'"
@@ -19,7 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.18",
-    "@types/node": "~8.10.0",
+    "@types/node": "~10",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
     "eslint": "^6.3.0",
